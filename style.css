@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+htm{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(to left, #2c2b2b 25%, #050505 75%);
+    background-size: cover;
+    color: white;
+}
+
+.header{
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+
+        h1{
+            color: black;
+        }
+}
+
+.header video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.navbar{
+    background-color: #4d4a4a;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar ul>li{
+    list-style: none;
+    margin-right: 2rem;
+        a{
+            color: white;
+            text-decoration: none;
+            transition-property: all;
+            transition: .5s ease;
+        }
+}
+
+.navbar ul>li>a:hover{
+    color: gold;
+    border-bottom: 1px solid gold;
+}
+
+.main h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tarjetas-noticias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    width: 15rem;
+}
+
+.tarjetas-noticias div{
+    border: 1px solid rgb(153, 152, 152);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    transition: all .5s ease;
+    
+        h3{
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+            color: #929090;
+        }
+}
+div:hover{
+    transform: translateY(-1rem);
+    background-color: #636161;
+    color: rgb(206, 176, 9);
+        p{
+            color: black;
+        }
+}
+
+.main{
+    margin-bottom: 5rem;
+}
+
+.sobre-nosotros{
+    background-color: #1f1e1e;
+    padding: 1rem;
+    margin-bottom: 0;
+
+        h2{
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.1rem;
+        }
+}
+
+.contacto{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 2rem 0;
+
+        h2{
+            margin-bottom: 2rem;
+        }
+}
+.contacto  form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+
+        input{
+            margin-bottom: .5rem;
+            width: 100%;
+        }
+}
+
+footer{
+    background-color: #1f1e1e;
+    padding: 1rem;
+
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+}
